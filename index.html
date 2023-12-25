@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteadFast X Jubayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awoesome 4 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="images/man_circle.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand animate__animated animate__infinite	infinite animate__heartBeat" href="https://steadfast.com.bd/" target="_blank">
+                <img src="ICON/Logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fas fa-bars navbar-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link text-center" href="https://web.facebook.com/messages/t/" target="_blank">Facebook</a>
+                    <a class="nav-item nav-link text-center" href="https://business.facebook.com/latest/inbox/" target="_blank">Meta</a>
+                    <a class="nav-item nav-link text-center" href="https://steadfast.com.bd/contact" target="_blank">Hubs</a>
+                    <a class="nav-item nav-link text-center" href="index_old.html" target="_blank">Old Dashboard</a>
+                    <a class="nav-item nav-link text-center header-btn" href="https://adminnew.steadfast.com.bd/admin/login" target="_blank">Admin</a>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- Dashboard Section Start  -->
+        <section id="dashboard">
+            <div class="container">
+                <h1 class="title3">SteadFast New Admin Dashboard</h1>
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Percel ID</p> 
+                        <input type="text" id="consignmentId" class="inputBox" placeholder="Type Consignment ID" onkeydown="handleKeyPress(event, 'consignmentId')">
+                    </div>
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Tracking ID</p> 
+                        <input type="text" id="trackingId" class="inputBox" placeholder="Type Tracking ID" onkeydown="handleKeyPress(event, 'trackingId')">
+                    </div>
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Payment ID</p> 
+                        <input type="text" id="paymentId" class="inputBox" placeholder="Type Payment ID" onkeydown="handleKeyPress(event, 'paymentId')">
+                    </div>
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search User ID</p> 
+                        <input type="text" id="userId" class="inputBox" placeholder="Type User ID" onkeydown="handleKeyPress(event, 'userId')">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Ticket ID</p> 
+                        <input type="text" id="ticketId" class="inputBox" placeholder="Type Ticket ID" onkeydown="handleKeyPress(event, 'ticketId')">
+                    </div>
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Dispatch ID</p> 
+                        <input type="text" id="dispatchtId" class="inputBox" placeholder="Type Dispatch ID" onkeydown="handleKeyPress(event, 'dispatchtId')">
+                    </div>
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Rider Rating</p> 
+                        <input type="text" id="riderRating" class="inputBox" placeholder="Type Rider ID" onkeydown="handleKeyPress(event, 'riderRating')">
+                    </div>
+                    <div class="col-lg-3 text-lg-left">
+                        <p class="inputtitle">Search Rider Number</p> 
+                        <input type="text" id="riderNumber" class="inputBox" placeholder="Type Rider ID" onkeydown="handleKeyPress(event, 'riderNumber')">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Dashboard section ends -->
+
+        <!-- details section  -->
+        <section id="details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <a href="https://www.facebook.com/steadfastcourier" target="_blank">
+                            <div class="card-body">
+                                <img src="ICON/Facebook_Logo_Primary.png" alt="">
+                                <div class="item-desc">
+                                    <h3>Facebook Page</h3>
+                                    <p>Inbox</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <a href="https://www.facebook.com/groups/1656732161490106" target="_blank">
+                            <div class="card-body">
+                                <img src="ICON/Facebook_Logo_Primary.png" alt="">
+                                <div class="item-desc">
+                                    <h3>Community Plus</h3>
+                                    <p>Best solution</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <a href="https://steadfastcourier.com/login" target="_blank">
+                                <div class="card-body">
+                                    <img src="ICON/ic_launcher_foreground.png" alt="">
+                                    <div class="item-desc">
+                                        <h3>Merchant Panel</h3>
+                                        <p>Find old details</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <a href="https://steadfast.com.bd/login" target="_blank">
+                                <div class="card-body">
+                                    <img src="ICON/ic_launcher_foreground.png" alt="">
+                                    <div class="item-desc">
+                                        <h3>Merchant Panel</h3>
+                                        <p>New panel</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- details section ends -->
+        <!-- testimonials section  -->
+        <section id="testimonials">
+            <div class="container testimonials_margin">
+                <h1 class="title3">ABOUT ME</h1>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 text-lg-right text-center p-2">
+                        <img class="rounded-circle" src="images/Man.jpg" width="100px" alt="">
+                    </div>
+                    <div class="col-lg-8 testimonials">
+                        <h3>Jubayer Hussain</h3>
+                        <p class="testSubHeading">Customer Care Executive</p>
+                        <p class="t-p2">I like to call myself "A passionate Learner and Jr. Web Developer."
+
+                            I am a student also working as a Customer Care Executive at StedFast Courier Service. I want to do my work in a best way and to help others. Please pray for me so that I can achive may goal easily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials section ends -->
+
+    </main>
+    <footer>
+        <div class="container">
+        <section class="upper-footer">
+            <div class="row text-lg-left text-center">
+                <div class="col-lg-6 footer_a">
+                    <a href="#top"><img src="/ICON/Logo_white.png" alt="" width="170px"></a>
+                    <p class="mb-0 pt-2 font-14 text-white">17/2, Dhanmondi 3/A, Dhaka-1209</p>
+                    <p class="mb-0 font-14 text-white"><span class="font-medium">E-mail:&nbsp;</span><a href="mailto:info@steadfast.com.bd" >info@steadfast.com.bd</a></p>
+                    <p class="mb-0 font-14 text-white"><span class="font-medium">Hotline:&nbsp;</span>09678-045045</p>
+                    
+                </div>
+                <div class="col-lg-3 col-6">
+                    <b>Downloads</b>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1NIs12WYgqmetSQIu2bBtuSMHXSP3gDt3/view?usp=drive_link" target="_blank">Zone Defination</a></li>
+                        <li><a href="https://translate.google.com" target="_blank">Zonal Managers</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1bUjDmv82EZHVtERgWy82JL_A_kDgb9opjqCWOcXhQZM/edit?usp=sharing" target="_blank">SteadFast Web App</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ub8kdF9q_1M_Y2c-I5Qhcl2Kce0Uusvs/view?usp=sharing" target="_blank">Favorite Bar Items</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <b>Useful Links</b>
+                    <ul>
+                        <li><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
+                        <li><a href="https://www.google.com/maps" target="_blank">Maps</a></li>
+                        <li><a href="https://translate.google.com" target="_blank">Translator</a></li>
+                        <li><a href="https://adminnew.steadfast.com.bd/admin/support" target="_blank">Tickets</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </div>
+    </footer>
+    <section id="lower-footer">
+        <hr class="hr-2">
+          <div class="row text-white mt-lg-3">
+          <div class="text-center text-lg-left col-lg-6">
+              <p>All rights reserved by &copy; Ahsan HJ</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+              <a href="#">Go to Top section</a>
+              <a href="https://facebook.com/jubayerbd.org" target="blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/Ahsan_HJ" target="blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/jubayar.bd/" target="blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@jubayarbd" target="blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          </div>
+      </section>  
+    <script src="script.js"></script>
+</body>
+</html>

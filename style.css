@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    /* margin-top: 5px; */
+    background: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar img{
+    width: 170px;
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0 7px;
+    transition: 0.4s;
+}
+.navbar-nav a:last-child{
+    color: white;
+    border-radius: 25px;
+    background: rgb(20, 191, 125);
+    outline: none;
+    padding: 10px 25px !important;
+}
+.navbar-nav a:hover{
+    transform: scale(1.1);
+    color: rgb(20, 191, 125);
+}
+
+/* dashbord start  */
+#dashboard{
+    margin: 80px 0;
+}
+
+.title3{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.inputtitle{
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+.inputBox{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+}
+
+/* dashbord ends  */
+/* Testimonials section */
+.testimonials h3{
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.testSubHeading{
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 1rem;
+}
+.t-p2{
+    font-size: 0.9rem;
+    margin-bottom: 150px;
+}
+.testimonials_margin{
+    margin-top: 100px;
+
+}
+/* Testimonials section */
+/* details section  */
+#details{
+    margin-bottom: 50px;
+}
+.card{
+    text-align: center;
+    transition: 0.4s;
+    background-color: #F8FFFB;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card a:hover{
+    text-decoration: none;
+    color: black;
+}
+.card-body img{
+    width: 66px;
+    margin: 20px 0;
+}
+.item-desc h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.card:hover{
+    transform: scale(1.1);
+    background-color: #FFFFFF;
+}
+/* details section ends */
+
+
+/* footer  */
+footer{
+    background-color: rgb(20, 191, 125);
+    padding: 20px 0;
+    color: white;
+}
+.upper-footer{
+    padding: 25px 0;
+}
+.upper-footer ul li{
+    list-style: none;
+    line-height: 30px;
+}
+.upper-footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+.upper-footer b{
+    font-size: 17px;
+}
+.lower-footer{
+    text-align: center;
+}
+.lower-footer a{
+    text-decoration: none;
+    color: white;
+}
+.lower-footer a:hover{
+    text-decoration: none;
+    color: white;
+}
+.footer_a a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer_a a:hover{
+    text-decoration: none;
+    color: rgb(175, 234, 0);
+}
+/* footer ends  */
+
+/* footer starts 2 */
+#lower-footer{
+    background: rgb(20, 191, 125);
+    padding: 1% 10%;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+#lower-footer a{
+    color: white;
+    margin: 0 10px;
+}
+#lower-footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+/* footer ends  2*/
+
+
+/* For Mobile */
+@media (max-width:768px){
+    #banner{
+        text-align: center;
+    }
+    #banner img{
+        margin: 80px 0;
+    }
+    .upper-footer{
+        padding: 30px;
+    }
+    .card{
+        margin: 20px 0;
+    }
+    .card2{
+        margin: 20px 0;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 50px;
+    }
+    
+}
