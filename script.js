@@ -13,14 +13,14 @@ function performSearch(inputId) {
     if (searchWord.trim() !== "") {
         // Define URLs for each search box
         var urlMap = {
-            'consignmentId': 'https://adminnew.steadfast.com.bd/admin/consignment/single/',
-            'trackingId': 'https://adminnew.steadfast.com.bd/admin/consignment/single/tracking-id?_token=2PqIXfgNsZ5wKiCsPFQXusM6oIp1mZafsPOxynIB&track_id=',
-            'paymentId': 'https://adminnew.steadfast.com.bd/admin/accounts/payment/single/',
-            'userId': 'https://adminnew.steadfast.com.bd/admin/merchant/profile/',
-            'ticketId': 'https://adminnew.steadfast.com.bd/admin/support/single/',
-            'dispatchtId': 'https://adminnew.steadfast.com.bd/admin/dispatch/show/',
-            'riderRating': 'https://adminnew.steadfast.com.bd/admin/rider/ratings/single/',
-            'riderNumber': 'https://adminnew.steadfast.com.bd/admin/deliveryman/'
+            'consignmentId': 'https://admin2.steadfast.com.bd/admin/consignment/single/',
+            'trackingId': 'https://admin2.steadfast.com.bd/admin/consignment/single/tracking-id?_token=2PqIXfgNsZ5wKiCsPFQXusM6oIp1mZafsPOxynIB&track_id=',
+            'paymentId': 'https://admin2.steadfast.com.bd/admin/accounts/payment/single/',
+            'userId': 'https://admin2.steadfast.com.bd/admin/merchant/profile/',
+            'ticketId': 'https://admin2.steadfast.com.bd/admin/support/single/',
+            'dispatchtId': 'https://admin2.steadfast.com.bd/admin/dispatch/show/',
+            'riderRating': 'https://admin2.steadfast.com.bd/admin/rider/ratings/single/',
+            'riderNumber': 'https://admin2.steadfast.com.bd/admin/deliveryman/'
         };
 
 
