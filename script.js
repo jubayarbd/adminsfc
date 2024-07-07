@@ -13,14 +13,14 @@ function performSearch(inputId) {
     if (searchWord.trim() !== "") {
         // Define URLs for each search box
         var urlMap = {
-            'consignmentId': 'https://admin.steadfast.com.bd/admin/consignment/single/',
-            'trackingId': 'https://admin.steadfast.com.bd/admin/consignment/single/tracking-id?_token=2PqIXfgNsZ5wKiCsPFQXusM6oIp1mZafsPOxynIB&track_id=',
-            'paymentId': 'https://admin.steadfast.com.bd/admin/accounts/payment/single/',
-            'userId': 'https://admin.steadfast.com.bd/admin/merchant/profile/',
-            'ticketId': 'https://admin.steadfast.com.bd/admin/support/single/',
-            'dispatchtId': 'https://admin.steadfast.com.bd/admin/dispatch/show/',
-            'riderRating': 'https://admin.steadfast.com.bd/admin/rider/ratings/single/',
-            'riderNumber': 'https://admin.steadfast.com.bd/admin/deliveryman/'
+            'consignmentId': 'https://admin.packzy.com/admin/consignment/single/',
+            'trackingId': 'https://admin.packzy.com/admin/consignment/single/tracking-id?_token=2PqIXfgNsZ5wKiCsPFQXusM6oIp1mZafsPOxynIB&track_id=',
+            'paymentId': 'https://admin.packzy.com/admin/accounts/payment/single/',
+            'userId': 'https://admin.packzy.com/admin/merchant/profile/',
+            'ticketId': 'https://admin.packzy.com/admin/support/single/',
+            'dispatchtId': 'https://admin.packzy.com/admin/dispatch/show/',
+            'riderRating': 'https://admin.packzy.com/admin/rider/ratings/single/',
+            'riderNumber': 'https://admin.packzy.com/admin/deliveryman/'
         };
 
 
