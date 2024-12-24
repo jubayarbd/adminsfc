@@ -11,8 +11,12 @@ html{
 }
 header{
     /* margin-top: 5px; */
-    background: #f1f1f1;
+    background: #ffffff;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Hide overflow if content exceeds width */
+    position: fixed; /* Make it stick to the top */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Full width */
 }
 .navbar img{
     width: 170px;
@@ -28,7 +32,7 @@ header{
 .navbar-nav a:last-child{
     color: white;
     border-radius: 25px;
-    background: rgb(20, 191, 125);
+    background: #00b795;
     outline: none;
     padding: 10px 25px !important;
 }
@@ -120,7 +124,7 @@ header{
 
 /* footer  */
 footer{
-    background-color: rgb(20, 191, 125);
+    background-color: #00b795;
     padding: 20px 0;
     color: white;
 }
@@ -161,7 +165,7 @@ footer{
 
 /* footer starts 2 */
 #lower-footer{
-    background: rgb(20, 191, 125);
+    background: #00b795;
     padding: 1% 10%;
     font-family: 'Times New Roman', Times, serif !important;
 }
