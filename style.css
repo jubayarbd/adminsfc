@@ -139,8 +139,11 @@ footer{
     color: white;
     text-decoration: none;
 }
+.upper-footer ul li a:hover{
+    color: #ffe300;
+}
 .upper-footer b{
-    font-size: 17px;
+    font-size: 25px;
 }
 .lower-footer{
     text-align: center;
