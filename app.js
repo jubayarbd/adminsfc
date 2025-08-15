@@ -7,7 +7,7 @@
 
         function performSearch(inputId) {
             // ইনপুট ফিল্ড থেকে ভ্যালু নেওয়া হচ্ছে
-            var searchWord = document.getElementById(inputId).value;
+            var searchWord = document.getElementById(inputId).value.trim();
 
             // সার্চ করার জন্য কোনো শব্দ লেখা হয়েছে কিনা তা পরীক্ষা করা হচ্ছে
             if (searchWord.trim() !== "") {
