@@ -2,220 +2,212 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SteadFast X Jubayer</title>
+	<link rel="icon" type="image/x-icon" href="https://steadfast.com.bd/assets/images/favicon_io/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- font awoesome 4 cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="icon" href="images/profile-modified.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>SteadFast Rangpur CC</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand animate__animated animate__infinite	infinite animate__heartBeat" href="https://steadfast.com.bd/" target="_blank">
-                <img src="ICON/logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span><i class="fas fa-bars navbar-icon"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link text-center" href="https://www.facebook.com/messages/t/" target="_blank">Facebook</a>
-                    <a class="nav-item nav-link text-center" href="https://business.facebook.com/latest/inbox/" target="_blank">Meta</a>
-                    <a class="nav-item nav-link text-center" href="https://merchant.packzy.com/contact" target="_blank">Hubs</a>
-                    <a class="nav-item nav-link text-center" href="index_old.html" target="_blank">Old Dashboard</a>
-                    <a class="nav-item nav-link text-center header-btn" href="https://admin.packzy.com/admin/login" target="_blank">Admin</a>
-                  </div>
-                </div>
-              </nav>
-        </div>
-    </header>
-    <main>
+    <nav class="navbar">
+        <!-- logo -->
+         <div class="logo">
+            <a href="https://steadfast.com.bd/"  target="_blank"><img src="assets/logo.svg" alt="logo"></a>
+         </div>
+         
+         <input type="checkbox" id="menu-checkbox">
 
-        <!-- Dashboard Section Start  -->
-        <section id="dashboard">
-            <div class="container">
-                <h1 class="title3">SteadFast Admin Dashboard</h1>
-                <br>
-                <div class="row">
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Percel ID</p> 
-                        <input type="text" id="consignmentId" class="inputBox" placeholder="Type Consignment ID" onkeydown="handleKeyPress(event, 'consignmentId')">
-                    </div>
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Tracking ID</p> 
-                        <input type="text" id="trackingId" class="inputBox" placeholder="Type Tracking ID" onkeydown="handleKeyPress(event, 'trackingId')">
-                    </div>
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Payment ID</p> 
-                        <input type="text" id="paymentId" class="inputBox" placeholder="Type Payment ID" onkeydown="handleKeyPress(event, 'paymentId')">
-                    </div>
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search User ID</p> 
-                        <input type="text" id="userId" class="inputBox" placeholder="Type User ID" onkeydown="handleKeyPress(event, 'userId')">
-                    </div>
+         <label for="menu-checkbox" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </label>
+
+         <ul class="nav-links">
+            <li><a href="https://admin.packzy.com/contact" target="_blank">Hubs</a></li>
+            <li><a href="https://steadfast.com.bd/login" target="_blank">Merchant Panel</a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a></li>
+            <li><a href="https://business.facebook.com/latest/inbox/messenger?asset_id=114049202349356&thread_type=FB_MESSAGE&mailbox_id=114049202349356&selected_item_id=61554845402323" target="_blank">Meta</a></li>
+            <li><a href="https://admin.packzy.com/admin/login" target="_blank" class="admin-button">Admin</a></li>
+         </ul>
+    </nav>
+
+     <main class="container">
+        <!-- ওয়েলকাম মেসেজ -->
+        <section class="main-header">
+            <h1>Welcome back, Admin</h1>
+            <!-- <p>Manage your courier operations efficiently with SteadFast Dashboard</p> -->
+        </section>
+
+        <!-- কুইক অ্যাক্সেস সেকশন -->
+        <section>
+            <h2 class="section-title">Quick Access</h2>
+            <div class="quick-access-grid">
+                <a href="https://docs.google.com/document/d/15Kw1D14ouUu1F_fd02TQ8E0g0vWETYL_/edit" target="_blank">
+                    <div class="quick-access-card card-blue">
+                    <h3>ALL ZONE</h3>
+                    <p>Find zone wise police station</p>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Ticket ID</p> 
-                        <input type="text" id="ticketId" class="inputBox" placeholder="Type Ticket ID" onkeydown="handleKeyPress(event, 'ticketId')">
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/1bUjDmv82EZHVtERgWy82JL_A_kDgb9opjqCWOcXhQZM/edit?usp=sharing" target="_blank">
+                    <div class="quick-access-card card-green">
+                    <h3>ZONAL MANAGERS</h3>
+                    <p>Find all zonal manager contact number and Hub IP</p>
+                </div>
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/1GgUfx89AjvbmSsiUP0p4rfV1YBkwHZxiLBE94RRvDhQ/edit?gid=1210528299#gid=1210528299"  target="_blank">
+                    <div class="quick-access-card card-orange">
+                    <h3>CHARGE CALCULATOR</h3>
+                    <p>Calculate delivery charges for different zones</p>
+                </div>
+                </a>
+                <a href="https://docs.google.com/document/d/1boJf2qGwM0KvMq54uCawBNi_h7eRjTiJh_GMQTMMuSI/edit?tab=t.0" target="_blank">
+                    <div class="quick-access-card card-purple">
+                    <h3>LEARN EVERYTHING</h3>
+                    <p>Access comprehensive training materials</p>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- সার্চ এবং ট্র্যাকিং সেকশন -->
+        <section>
+            <h2 class="section-title">Search & Tracking</h2>
+            <div class="search-tracking-grid">
+                <!-- কার্ড ১ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-green">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.928 11.607c-.202-.488-.635-.804-1.128-.804s-.926.316-1.128.804l-1.477 3.567-3.57-1.477c-.488-.202-.996.044-1.2.532-.202.488.044.996.532 1.2l3.57 1.477-1.477 3.567c-.202.488.044.996.532 1.2.14.057.287.085.432.085.36 0 .69-.21.84-.55l1.477-3.57 3.567 1.477c.488.202.996-.044 1.2-.532.202-.488-.044-.996-.532-1.2l-3.567-1.477 1.477-3.567c.202-.488-.044-.996-.532-1.2zM15.5 9.5a1 1 0 100-2 1 1 0 000 2zM11 11.5a1 1 0 100-2 1 1 0 000 2zM6.5 13.5a1 1 0 100-2 1 1 0 000 2zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10a9.955 9.955 0 005.155-1.54l3.585 3.585a1 1 0 001.414-1.414l-3.585-3.585A9.955 9.955 0 0022 12c0-5.523-4.477-10-10-10zm0 18a8 8 0 110-16 8 8 0 010 16z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Search Parcel ID</h3>
+                            <p>Quick search and tracking</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Dispatch ID</p> 
-                        <input type="text" id="dispatchtId" class="inputBox" placeholder="Type Dispatch ID" onkeydown="handleKeyPress(event, 'dispatchtId')">
+                    <form class="search-form">
+                        <input type="text" id="consignmentId" onkeyup="handleKeyPress(event, 'consignmentId')" placeholder="Enter Parcel ID...">
+                        <button type="submit" onclick="performSearch('consignmentId')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ২ -->
+                 <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <div>
+                            <h3>User ID</h3>
+                            <p>Quick search and tracking</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Rider Rating</p> 
-                        <input type="text" id="riderRating" class="inputBox" placeholder="Type Rider ID" onkeydown="handleKeyPress(event, 'riderRating')">
+                    <form class="search-form">
+                        <input type="text" id="userId" onkeyup="handleKeyPress(event, 'userId')" placeholder="Enter User ID...">
+                        <button type="submit" onclick="performSearch('userId')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ৩ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-6h2v-6h-2v6zm0 2h2v-2h-2v2z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Tracking ID</h3>
+                            <p>Quick search and tracking</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 text-lg-left">
-                        <p class="inputtitle">Search Rider Number</p> 
-                        <input type="text" id="riderNumber" class="inputBox" placeholder="Type Rider ID" onkeydown="handleKeyPress(event, 'riderNumber')">
+                    <form class="search-form">
+                        <input type="text" id="trackingId" onkeyup="handleKeyPress(event, 'trackingId')" placeholder="Enter Tracking ID...">
+                        <button type="submit" onclick="performSearch('trackingId')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ৪ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-pink">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Ticket ID</h3>
+                            <p>Quick search and tracking</p>
+                        </div>
                     </div>
+                    <form class="search-form">
+                        <input type="text" id="ticketId" onkeyup="handleKeyPress(event, 'ticketId')" placeholder="Enter Ticket ID...">
+                        <button type="submit" onclick="performSearch('ticketId')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ৫ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-purple">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 14H4V8h16v10zM6 10h4v2H6v-2z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Payment ID</h3>
+                            <p>Quick search and tracking</p>
+                        </div>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" id="paymentId" onkeyup="handleKeyPress(event, 'paymentId')" placeholder="Enter Payment ID...">
+                        <button type="submit" onclick="performSearch('paymentId')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ৬ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-teal">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15 6H4.79C4.34 4.84 3.27 4 2 4c-1.1 0-2 .9-2 2s.9 2 2 2c1.27 0 2.34-.84 2.79-2H9v1.38c-.83.38-1.5.99-1.92 1.76L4.22 12H2v8h2v-3h2v3h2v-4h1.6c.01.01.01.02.02.03.17.22.36.42.58.6L12 21l8-4.5V8h-2.5l-2.7-3.86c-.42-.6-1.09-1.04-1.8-1.14V6zm-3.5 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zM6 6c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Dispatch ID</h3>
+                            <p>Quick search and tracking</p>
+                        </div>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" id="dispatchId" onkeyup="handleKeyPress(event, 'dispatchId')" placeholder="Enter Dispatch ID...">
+                        <button type="submit" onclick="performSearch('dispatchId')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ৭ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-blue">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Rider Rating</h3>
+                            <p>Search by rating...</p>
+                        </div>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" id="riderRating" onkeyup="handleKeyPress(event, 'riderRating')" placeholder="Enter Rider ID...">
+                        <button type="submit" onclick="performSearch('riderRating')" class="btn-green">Search</button>
+                    </form>
+                </div>
+                <!-- কার্ড ৮ -->
+                <div class="search-card">
+                    <div class="search-card-header">
+                        <div class="search-card-icon icon-cyan">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Rider Number</h3>
+                            <p>Search</p>
+                        </div>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" id="riderNumber" onkeyup="handleKeyPress(event, 'riderNumber')" placeholder="Enter Rider ID...">
+                        <button type="submit" onclick="performSearch('riderNumber')" class="btn-green">Search</button>
+                    </form>
                 </div>
             </div>
         </section>
-        <!-- Dashboard section ends -->
-
-        <!-- details section  -->
-        <section id="details">
-            <div class="container">
-                <div class="row">
-                                       
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <a href="https://docs.google.com/document/d/1boJf2qGwM0KvMq54uCawBNi_h7eRjTiJh_GMQTMMuSI/edit?usp=sharing" target="_blank">
-                                <div class="card-body">
-                                    <img src="ICON/a2z2.png" alt="">
-                                    <div class="item-desc">
-                                        <h3>Learn Everything</h3>
-                                        <p>About SteadFasT Courier</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <a href="https://docs.google.com/spreadsheets/d/1GgUfx89AjvbmSsiUP0p4rfV1YBkwHZxiLBE94RRvDhQ/edit?gid=1210528299#gid=1210528299" target="_blank">
-                            <div class="card-body">
-                                <img src="images/icons8-calculator-100.png" alt="">
-                                <div class="item-desc">
-                                    <h3>Charge Calculator</h3>
-                                    <p>Helpful Tool</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-
-                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <a href="https://merchant.packzy.com/login" target="_blank">
-                            <div class="card-body">
-                                <img src="ICON/ic_launcher_foreground.png" alt="">
-                                <div class="item-desc">
-                                    <h3>Merchant Panel</h3>
-                                    <p>For OLD UI</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <a href="https://steadfast.com.bd/login" target="_blank">
-                                <div class="card-body">
-                                    <img src="ICON/round_logo.svg" alt="">
-                                    <div class="item-desc">
-                                        <h3>Merchant Panel</h3>
-                                        <p>New Panel New UI</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- details section ends -->
-        <!-- testimonials section  -->
-        <section id="testimonials">
-            <div class="container testimonials_margin">
-                <h1 class="title3">ABOUT ME</h1>
-                <br>
-                <div class="row">
-                    <div class="col-lg-4 text-lg-right text-center p-2">
-                        <img class="rounded-circle" src="images/juba.jpg" width="100px" alt="">
-                    </div>
-                    <div class="col-lg-8 testimonials">
-                        <h3>Jubayer Hussain</h3>
-                        <p class="testSubHeading">Customer Care Executive</p>
-                        <p class="t-p2">I like to call myself "A passionate Learner and Jr. Web Developer."
-
-                            I am a student also working as a Customer Care Executive at StedFast Courier Service. I want to do my work in a best way and to help others. Please pray for me so that I can achive may goal easily.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- testimonials section ends -->
-
     </main>
-    <footer>
-        <div class="container">
-        <section class="upper-footer">
-            <div class="row text-lg-left text-center">
-                <div class="col-lg-6 footer_a">
-                    <a href="#top"><img src="ICON/Logo_white.png" alt="" width="170px"></a>
-                    <p class="mb-0 pt-2 font-14 text-white"><a href="https://maps.app.goo.gl/KgRRJnZzhyysWTbAA"  target="_blank">House-44 Road-2/A,Zigatola Bus Stand <br> Dhanmondi, Dhaka-12095</a></p>
-                    <p class="mb-0 font-14 text-white"><span class="font-medium">E-mail:&nbsp;</span><a href="mailto:info@steadfast.com.bd" >info@steadfast.com.bd</a></p>
-                    <p class="mb-0 font-14 text-white"><span class="font-medium">Hotline:&nbsp;</span><a href="tel:+8809678045045">09678-045045</a></p>
-                    
-                </div>
-                <div class="col-lg-3 col-6">
-                    <b>Useful Files</b>
-                    <ul>
-                        <li><a href="https://docs.google.com/document/d/15Kw1D14ouUu1F_fd02TQ8E0g0vWETYL_/edit?fbclid=IwZXh0bgNhZW0CMTAAAR2yszCgGY9g47d2gY_-zit4verXxs7X2B-3fjwQozxZ4x1XVjFTtN2ErNQ_aem_AdwATb6btweLKgXbVsCEirAvvIl5sFQPb_3bOf-ZRngqzTVsCP1SRr3tUGyNUTHzaEdCvr3xnsv54mcIwhQc-r7B" target="_blank">All Zone</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1bUjDmv82EZHVtERgWy82JL_A_kDgb9opjqCWOcXhQZM/edit?usp=sharing" target="_blank">Zonal Managers</a></li>
-                        <li><a href="https://drive.google.com/file/d/1-Punv6LbG7GPUmOp8MxCFxDqEEQ7vnvB/view?fbclid=IwZXh0bgNhZW0CMTAAAR1c7mSEuzfDyCfH2qVZnzyjtwnVE7L8SHXcOD7DsrvObmSkT0bai4WAwaw_aem_Adx8wS1MVtNW8DsbRLfXsLdeEpBWZKFm0WYipr2vTS2m__Uodf0ROYeWN7G-nn2fkbe0GzWZt2fVxrjQ5Yv5-fnB" target="_blank">International Charge List</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1diijk3eoZpLmn-_59JDANOJ4kPv4J9Qe?fbclid=IwAR2u2HaNj-WYc_0PJiGsGbIDP3Mrk4FkH4IYhHapUvSBDmzbPQsvdaMYil4" target="_blank">SteadFast Web App</a></li>
 
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <b>Useful Links</b>
-                    <ul>
-                        <li><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
-                        <li><a href="https://www.google.com/maps" target="_blank">Maps</a></li>
-                        <li><a href="https://translate.google.com/?sl=bn&tl=en&op=translate" target="_blank">Translator</a></li>
-                        <li><a href="https://admin.packzy.com/admin/support" target="_blank">Tickets</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        </div>
-    </footer>
-    <section id="lower-footer">
-        <hr class="hr-2">
-          <div class="row text-white mt-lg-3">
-          <div class="text-center text-lg-left col-lg-6">
-              <p>All rights reserved by &copy; Ahsan HJ</p>
-          </div>
-          <div class="col-lg-6 text-center text-lg-right">
-              <a href="#">Go to Top section</a>
-              <a href="https://facebook.com/jubayar.info" target="blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://twitter.com/Ahsan_HJ" target="blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/jubayar.bd/" target="blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/@jubayarbd" target="blank"><i class="fab fa-youtube"></i></a>
-          </div>
-          </div>
-      </section>  
-    <script src="script.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
