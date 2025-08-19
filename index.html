@@ -199,6 +199,11 @@
             margin-bottom: 15px;
         }
 
+		#welcome:hover {
+     		 color: #19C95F;
+	 		 cursor: pointer;
+	   	 }
+
         /* --- কুইক অ্যাক্সেস সেকশন --- */
         .quick-access-grid {
             display: grid;
@@ -392,7 +397,7 @@
      <main class="container">
         <!-- ওয়েলকাম মেসেজ -->
         <section class="main-header">
-            <h1>Welcome back, Admin</h1>
+            <h1 id="welcome">Welcome back, Admin</h1>
             <!-- <p>Manage your courier operations efficiently with SteadFast Dashboard</p> -->
         </section>
 
@@ -564,7 +569,20 @@
     </main>
 
 	<script src="app.js"></script>
+	 <script>
+    // লোকাল স্টোরেজ থেকে নাম নেওয়া
+    const savedName = localStorage.getItem("username");
+    if (savedName) {
+      document.getElementById("welcome").textContent = `Welcome back, ${savedName}`;
+    }
+
+    // welcome লেখায় ক্লিক করলে setname.html এ যাবে
+    document.getElementById("welcome").addEventListener("click", () => {
+      window.location.href = "setname.html";
+    });
+  </script>
 </body>
 </html>
+
 
 
