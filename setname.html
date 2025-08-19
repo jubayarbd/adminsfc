@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set Name</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 300px;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    .form-container input:focus {
+      outline: none;
+      border-color: #2575fc;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .form-container button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Enter Your Name</h2>
+    <form id="nameForm">
+      <input type="text" id="nameInput" placeholder="Type your name" required>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("nameForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("nameInput").value.trim();
+      if (name) {
+        localStorage.setItem("username", name);
+        window.location.href = "index.html";
+      }
+    });
+  </script>
+</body>
+</html>
